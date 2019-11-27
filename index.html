@@ -1,12 +1,13 @@
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PostMessage page</title>
     <script>
         function sendPostMessage() {
           var inputElem = document.getElementById("message_input");
           try {
             console.log('YAL', inputElem.value);
-            Print.postMessage(inputElem.value);
+            Pinch.postMessage(inputElem.value);
           } catch (e) {
             console.debug('error: ', e);
           }
